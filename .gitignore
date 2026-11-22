@@ -1,0 +1,12 @@
+.github_token
+__pycache__/
+*.tmp
+.DS_Store
+# Traffic history (lives on the server; local copies only)
+data/
+backups/
+
+# Your server's address, SSH key and login user (written by deploy.sh setup)
+deploy/server.env
+
+.gsc_key.json

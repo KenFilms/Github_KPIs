@@ -1,0 +1,11 @@
+[Unit]
+Description=Collect GitHub traffic every 6 hours
+
+[Timer]
+OnCalendar=*-*-* 00/6:17:00 UTC
+RandomizedDelaySec=5min
+# Catch up after downtime (GitHub keeps 14 days, so nothing is lost).
+Persistent=true
+
+[Install]
+WantedBy=timers.target

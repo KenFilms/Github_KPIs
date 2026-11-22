@@ -1,0 +1,1519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Traffic</title>
+<!-- Favicon: a rainbow bull (inline SVG; the PNG is the same icon for browsers without SVG icons). -->
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAACYVJREFUeNrlW2lsVNcV/u57s3gbr2A2g40xNomSGEgCKVJT+FGlatQspCqkUaq0Saiq0uRPaFMJqY1UqT+oKjWhqhSomgglhDYNWxUliipQSgk0jc3Wxobxgj0YvA72eJvt3Z7zxsuMPfPmzcwznspXGj2/8bvnnvPdc8825wELfIi5XqCkurrIJR0PS8j7hII6SNTRouVSCBddXfyMBHxCSh9de4ijZqmhWUBc8onAp97W1sH/OwBWrqxZI+y2Z0m0b9LtRiGEmg4dKWWYLg3E5ocyGDrU2eluyWYA1IrqdTsUIX9Mu7dlLoAlLTqrSfF7T2vTEboNZwsAauXquuekgp+T4GvuxLklIFqEhl9fb2t+K1MgMgKgomrtZlVV/0B/bpgnG9YYDod/5Gm/dv4OA1DjXLVG2QcpdtP5FpjHQXZCQsj9HS3aHsDtn3MAKirW1ChO+xGauDGb3Bl5kAbNH9zh8bS45wyAlavXPqwI5QSEKMpKpy7loCa1xzrbrn1qdopiWviq2idI+I+zVnh9O0UR88i8WqoBTFAo4v10/fk82IWw1OS3O9uvHstYA3S1V8RhFr5kfu2duciTeGRemWfmPSMAdIMXOfM5fL/HZct6AKZ4JJ6Zd5YhTQBqnGzto8/8NqeK5/Oy9xQwb8xjjE1gGUiWlAFgPz/T1XWGJfYW2rE734ZsOgzMC/PEvDGPM/63UY9ZUgGAIzwOcmZ+fyWo6Yu9Qmr2l1IHvuJQ5l145oF5YZ7EBI+zraLYrcsUZ8Q71OpEeDtrkz8LaPhBfkTFHqCFD9PCNzWJs34NrSGJQQJfo5CkgAzRmyMhSwXdRTs8TEGfQmwVEWfVNoEtTgXLFDGLx9nekaxiRKYHZ+YOs4SkxOZ5KOJgIrTOlztRphgfAC8xuqHbj3x6bDMBVW9XUEMMV6gCi2iuiwDKVabRZ6jGiG8fzesjQD2kxm4C9CLt5nkSaISAbVziRDIv1E9zN/f4kRB6Tb5ACdQfjTRAjWR18QcTPlDZhVe/2mvIyMigHW/cysUjNT44VJl0d+0Tn0L6rKBPfdT/AmGBj90ujCwdQ0lR0JDOgX8sRqinLHF8QLLRJSaDjJGV8vnv0ia9Y5j70s59sLMd9UvHjeJyy41kMpoXb+Vg+3tVCGvGdEi5nvG0Nr0b1whyMSMZI7zA94+uxJWenDtaZjKiybwwT8mEjyejiC5jKQ6b6Uwq36HhpYf68Nx6L5w2ifkY/pDAWxdK8Pq5RRgJmPdIWiBUM1lem4oaiheVv0w2ZqtZIkE6m2eu5+P9/xSje9iGkCZQWRzAXEfLZOdwqq0A714qxqufLMNHZB+Yl5SGongHvX2nYzRgVXXdv8hbPGhmvp0M23qyActcQYRo8Q4yev/tzcHVl5thU+ZWGxjo2t/V4e7F41hFRtFGvNz02XGBbIBZIChZ+ryjtXnTFAB66Rr2/mTZXklOGLsf6sfOe27rRyDGBY2qKKDv5vo4sNoPk7qX5cWWAvkIvHelGPvPlcE7ribNFn0IlnHJXQdg1ep13xIKThhNuqd8HAcev6HvejYP1oYXj68wNNI6CBoe62hrOqnHAUKR9UZ2dvXyIA79pg8lrkmPnb1jGX0ObevD9leWoK3LbuBW5X10OalEVAJ1RkRHxxV03kovFb7tU3DmQo5+ncs5MUkb8co8GxePsC46Eqw1erh7QMVTP12C7z3qw4tP+rC0zFwp/rLbgWf2lmNoREFhvoZ3ftWDe2sCls+ZHLf6VRw46sLbf3PpxjnJqJ0ygpXVdW0ESZU5DwJsqPOjfm0ASxeFkEuZ9siYQFevisUlYfxkx9DUs9v3LEFD03QqvnGdHx/s6zakn2zOG0cK0etVsXxxGPm5EmN+ErzPhovXHGhsdkLTTKqJlO3XW5tX2yLZov5DpTk/TAt88aVT/8wqoVSEpgAYHhUxgvDge/6+IC++pzAz5/jpArg9mVemWOapUHjyV9pMR2uXTdeGuRpMm9ewKLR2mSqKphSlkXacvxJxP7xjrL7R4/67/Al338wcpm1axc0GhROZls8qgv+8OK3Cr/3QqxsyHnz95S5v0vlGc6JpW5Bd+tIygsmGWuFE4et3TWuFL4Rw6xjU6lwoJqvKieYMvfQlwh6/RQhEjOCkBvRYhSwzqHVNM8kC2OtdpoVPNIdpWiZ8lMyTNuCqlecqcM76rpbAudtWFxiap22ARJOVtINWM6vTtBZU7kOKcoPikqUpq3sUWq91SRPTYprWKkBEZh0A7saaaEjKSi2wWqP0dJhkngJgohWtwdK8/cztrKQ1GWBOtt9FBULiQytXCF8bgdadudVmGkzLYgs4JeuUn+E+POGw/cK6NRRcP7kXwSWZddLYuxtQLJ7VrZZlR4BkjYkE9Ry6093CfXjWCC8wtO23GQuvn3+iwbSsqrayjNENlzG5ADchWpK0rN8Nf+UjscGNrxO5lw/q14QBUIJnmBbTtMSjzJBxJqzqqjV1zZk0PGq5ZRj4zilIZbocJQLDKP3rN6CM90PLof8/9RGkoyBWaZI8I7QgSv+8DcpYfya739LR0szVr3BcDeB/cAdmRhFbxddihNfPcddZXTB9Qbry/ayznuQZpsm0MzqZEdnCs7LB6DHRftqYtgbklc9ZPSBD2o0TssEQAEaI20/1Dsx08uvR2XlVcPkWXa11IejK9+k8E4+2ycBHskyI01cc9xeEodsDN4pKy8rIFmxOGYCxHozfTW4r+jcW1QF/1df1HRze9DPIvMVx8mjjZ9gGFHz2GkRoLA3dl/s7264dTFAZSjS4H9h2Np2W2CcrduHxFS9Yqv7HbxzEUc+b6aS9DR0toS2J+ogNSmJuP/fecvtpqoseI2Y/H/i7ZcIzrWOeA+no/qAug0ETteGPaEND3oHC4lLSAvE0BSK2VHD/t/cUZ1yoddXT1PRKjxrlZye6/oRD1/exC0tV+HFNao96OtyNxlmhiZFJq+yy3Cr9SNxfshWqSQzDMoQvvKd1lb851p5Wtme2VdZ0fKk3Syvi8GTXaKoj31aIjaVbUVNwL6ry1qHIXkbfRarxIyEfBoP9aB9tgnv4MhoGTtN3Q+nmuuOaJp82I3xKAOggLOR2eT1hIsLhQOgBaXHtwJokBw3MWyrCJzWCiQzjoLf47aJSFNGqm7LnlZnwzqGhlt7US2MZjAX80lSsFi3Y1+ZmArFQX5yc7S0W6Kuzccfky9PchzTRilNr+PI0cFXoL1CLi3fi5ekFP/4H6+Rm2oDx3m8AAAAASUVORK5CYII=">
+<link rel="icon" type="image/svg+xml" sizes="any" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='r' gradientUnits='userSpaceOnUse' x1='0' y1='10' x2='0' y2='58'%3E%3Cstop offset='0' stop-color='%23ff3b30'/%3E%3Cstop offset='.167' stop-color='%23ff3b30'/%3E%3Cstop offset='.167' stop-color='%23ff9500'/%3E%3Cstop offset='.333' stop-color='%23ff9500'/%3E%3Cstop offset='.333' stop-color='%23ffd60a'/%3E%3Cstop offset='.5' stop-color='%23ffd60a'/%3E%3Cstop offset='.5' stop-color='%2330d158'/%3E%3Cstop offset='.667' stop-color='%2330d158'/%3E%3Cstop offset='.667' stop-color='%230a84ff'/%3E%3Cstop offset='.833' stop-color='%230a84ff'/%3E%3Cstop offset='.833' stop-color='%23bf5af2'/%3E%3Cstop offset='1' stop-color='%23bf5af2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='31' fill='%231f2328'/%3E%3Cg fill='url(%23r)'%3E%3Cpath d='M21.5 23C14 23 11 18.5 11 11.5c2.5 4.5 6.5 5.5 11 5z'/%3E%3Cpath d='M42.5 23c7.5 0 10.5-4.5 10.5-11.5-2.5 4.5-6.5 5.5-11 5z'/%3E%3Cpath d='M20.5 25c-4-2.5-8.5-1.5-11 2 3 3 7.5 3 11 2z'/%3E%3Cpath d='M43.5 25c4-2.5 8.5-1.5 11 2-3 3-7.5 3-11 2z'/%3E%3Cpath d='M19 23c0-4 4-6 13-6s13 2 13 6c0 8-3 15-5 21H24c-2-6-5-13-5-21z'/%3E%3Cellipse cx='32' cy='47.5' rx='11.5' ry='7.5'/%3E%3C/g%3E%3Cg fill='%231f2328'%3E%3Cellipse cx='25.5' cy='31' rx='2.6' ry='3.3'/%3E%3Cellipse cx='38.5' cy='31' rx='2.6' ry='3.3'/%3E%3Cellipse cx='27.5' cy='47' rx='1.9' ry='2.5'/%3E%3Cellipse cx='36.5' cy='47' rx='1.9' ry='2.5'/%3E%3C/g%3E%3C/svg%3E">
+<script>
+  // Saved theme choice (light / dark), applied before the first paint. No choice = follow the system.
+  try {
+    var t = JSON.parse(localStorage.getItem('ghtd.theme'));
+    if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7;
+    --surface: #fcfcfb;
+    --text-1: #0b0b0b;
+    --text-2: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --border: rgba(11, 11, 11, 0.10);
+    --wash: rgba(11, 11, 11, 0.04);
+    --s1: #2a78d6;           /* total (views / clones) */
+    --s2: #eb6834;           /* unique (visitors / cloners) */
+    --s1-wash: rgba(42, 120, 214, 0.10);
+    --s1-soft: #9ec5f4;      /* same ramp, lighter step: incomplete period */
+    --up: #006300;
+    --down: #d03b3b;
+    --warning: #fab219;
+  }
+  /* Dark: by system setting unless Light was picked, or when Dark was picked (same values). */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0d0d0d;
+      --surface: #1a1a19;
+      --text-1: #f0efec;
+      --text-2: #c3c2b7;
+      --muted: #898781;
+      --grid: #2c2c2a;
+      --axis: #383835;
+      --border: rgba(255, 255, 255, 0.10);
+      --wash: rgba(255, 255, 255, 0.05);
+      --s1: #3987e5;
+      --s2: #d95926;
+      --s1-wash: rgba(57, 135, 229, 0.16);
+      --s1-soft: #184f95;
+      --up: #0ca30c;
+      --down: #e66767;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --text-1: #f0efec;
+    --text-2: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --border: rgba(255, 255, 255, 0.10);
+    --wash: rgba(255, 255, 255, 0.05);
+    --s1: #3987e5;
+    --s2: #d95926;
+    --s1-wash: rgba(57, 135, 229, 0.16);
+    --s1-soft: #184f95;
+    --up: #0ca30c;
+    --down: #e66767;
+  }
+
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-1);
+    font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 28px 16px 56px; }
+  a { color: inherit; }
+  button { font: inherit; color: inherit; }
+
+  /* Header */
+  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px 16px; flex-wrap: wrap; }
+  .seg.small button { padding: 3px 10px; font-size: 12px; }
+  header h1 { font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+  header .meta { color: var(--text-2); margin-top: 4px; font-size: 13px; }
+  header .meta span + span::before { content: "·"; margin: 0 8px; color: var(--muted); }
+
+  .banner {
+    display: flex; gap: 10px; align-items: flex-start;
+    margin-top: 16px; padding: 10px 14px; border-radius: 10px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text-1);
+    font-size: 13px;
+  }
+  .banner .icon { flex: none; width: 18px; height: 18px; margin-top: 1px; }
+  .banner code { font-size: 12px; }
+
+  /* Filter row */
+  .filters {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center;
+    margin: 18px -16px 14px; padding: 10px 16px;
+    background: var(--page);
+    border-bottom: 1px solid transparent;
+  }
+  .filters.stuck { border-bottom-color: var(--border); }
+  .seg {
+    display: inline-flex; padding: 2px; gap: 2px;
+    border: 1px solid var(--border); border-radius: 9px; background: var(--surface);
+  }
+  .seg button {
+    border: 0; background: none; padding: 5px 12px; border-radius: 7px; cursor: pointer;
+    color: var(--text-2); font-size: 13px;
+  }
+  .seg button:hover { background: var(--wash); color: var(--text-1); }
+  .seg button[aria-pressed="true"] { background: var(--text-1); color: var(--surface); font-weight: 500; }
+  .nav { display: inline-flex; align-items: center; gap: 2px; }
+  .icon-btn {
+    width: 30px; height: 30px; display: inline-grid; place-items: center;
+    border: 1px solid var(--border); border-radius: 8px; background: var(--surface); cursor: pointer;
+    color: var(--text-2);
+  }
+  .icon-btn:hover:not(:disabled) { color: var(--text-1); background: var(--wash); }
+  .icon-btn:disabled { opacity: 0.35; cursor: default; }
+  .period-label {
+    min-width: 170px; text-align: center; font-weight: 500; font-size: 13.5px; padding: 0 6px;
+    font-variant-numeric: tabular-nums;
+  }
+  .link-btn {
+    border: 0; background: none; padding: 4px 6px; cursor: pointer; font-size: 13px;
+    color: var(--text-2); text-decoration: underline; text-underline-offset: 2px;
+  }
+  .link-btn:hover { color: var(--text-1); }
+  .select-wrap { position: relative; }
+  select {
+    appearance: none; -webkit-appearance: none; font: inherit; font-size: 13px; color: var(--text-1);
+    border: 1px solid var(--border); border-radius: 8px; background: var(--surface);
+    padding: 6px 30px 6px 10px; max-width: 260px; cursor: pointer;
+  }
+  .select-wrap::after {
+    content: ""; position: absolute; right: 11px; top: 50%; width: 6px; height: 6px; margin-top: -5px;
+    border-right: 1.5px solid var(--text-2); border-bottom: 1.5px solid var(--text-2);
+    transform: rotate(45deg); pointer-events: none;
+  }
+  :focus-visible { outline: 2px solid var(--s1); outline-offset: 2px; }
+
+  /* Cards */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; min-width: 0; }
+  .dim { opacity: 0.55; transition: opacity 0.15s; }
+
+  /* KPI tiles */
+  .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .tile .label { color: var(--text-2); font-size: 13px; display: flex; align-items: center; gap: 7px; }
+  .tile .key { flex: none; }
+  .tile .value { font-size: 30px; font-weight: 600; letter-spacing: -0.015em; margin: 6px 0 4px; line-height: 1.1; }
+  .tile .delta { font-size: 12.5px; color: var(--text-2); min-height: 18px; }
+  .tile .delta .up { color: var(--up); font-weight: 600; }
+  .tile .delta .down { color: var(--down); font-weight: 600; }
+  .tile .sub { font-size: 12px; color: var(--muted); }
+
+  /* Charts */
+  .charts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+  .chart-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .chart-head h2 { font-size: 15px; font-weight: 600; margin: 0; }
+  .chart-head p { margin: 2px 0 0; color: var(--text-2); font-size: 12.5px; }
+  .toggle {
+    flex: none; border: 1px solid var(--border); border-radius: 7px; background: none; cursor: pointer;
+    padding: 3px 9px; font-size: 12px; color: var(--text-2);
+  }
+  .toggle:hover { color: var(--text-1); background: var(--wash); }
+  .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12.5px; color: var(--text-2); margin: 10px 0 2px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .key-bar { width: 10px; height: 10px; border-radius: 2px; background: var(--s1); display: inline-block; }
+  .key-bar.soft { background: var(--s1-soft); }
+  .key-line.s1 { background: var(--s1); }
+  .key-line { width: 14px; height: 2px; border-radius: 1px; background: var(--s2); display: inline-block; }
+  .plot { position: relative; margin-top: 4px; }
+  .plot svg { display: block; overflow: visible; }
+  .plot svg:focus { outline: none; }
+  .plot svg:focus-visible { outline: 2px solid var(--s1); outline-offset: 4px; border-radius: 4px; }
+  .tick { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .peak { fill: var(--text-2); font-size: 11px; font-weight: 600; }
+  .tick.sel { fill: var(--text-1); font-weight: 600; }
+  .tooltip {
+    position: absolute; top: 0; left: 0; z-index: 5; pointer-events: none;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); padding: 8px 10px; font-size: 12.5px;
+    min-width: 150px; white-space: nowrap; opacity: 0; transition: opacity 0.08s;
+  }
+  .tooltip.show { opacity: 1; }
+  .tooltip .t-head { color: var(--text-2); margin-bottom: 4px; }
+  .tooltip .t-row { display: flex; align-items: center; gap: 8px; }
+  .tooltip .t-row b { font-weight: 600; font-variant-numeric: tabular-nums; min-width: 36px; }
+  .tooltip .t-row span { color: var(--text-2); }
+  .tooltip .t-note { color: var(--muted); }
+
+  /* Tables */
+  .table-scroll { overflow-x: auto; margin: 0 -16px; padding: 0 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 8px 10px; text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; padding-left: 0; }
+  th:last-child, td:last-child { padding-right: 0; }
+  thead th { color: var(--text-2); font-weight: 500; font-size: 12px; border-bottom: 1px solid var(--grid); }
+  tbody td { border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; }
+  tbody tr:last-child td { border-bottom: 0; }
+  th button {
+    border: 0; background: none; padding: 0; cursor: pointer; color: inherit; font: inherit;
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  th button:hover { color: var(--text-1); }
+  th .arrow { font-size: 10px; width: 8px; }
+  .chart-table { margin-top: 10px; max-height: 300px; overflow-y: auto; }
+
+  .repos { margin-top: 12px; }
+  .repos .card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+  .repos h2 { font-size: 15px; font-weight: 600; margin: 0; }
+  .repos .card-head p { margin: 0; color: var(--text-2); font-size: 12.5px; }
+  .repo-cell { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  .repo-btn {
+    border: 0; background: none; padding: 0; cursor: pointer; font-weight: 500; text-align: left;
+    max-width: 260px; overflow: hidden; text-overflow: ellipsis;
+  }
+  .repo-btn:hover { text-decoration: underline; text-underline-offset: 2px; }
+  .ext { color: var(--muted); text-decoration: none; font-size: 12px; }
+  .ext:hover { color: var(--text-1); }
+  .badge {
+    font-size: 10.5px; color: var(--text-2); border: 1px solid var(--border); border-radius: 999px;
+    padding: 0 6px; line-height: 16px;
+  }
+  tr.selected td { background: var(--s1-wash); }
+  tr.selected td:first-child { box-shadow: inset 3px 0 0 var(--s1); padding-left: 10px; }
+  .num-bar { display: inline-flex; align-items: center; gap: 8px; justify-content: flex-end; }
+  .meter { width: 64px; height: 6px; border-radius: 3px; background: var(--grid); overflow: hidden; display: inline-block; }
+  .meter i { display: block; height: 100%; border-radius: 3px; background: var(--s1); }
+  .zero { color: var(--muted); }
+  .more { margin-top: 8px; }
+
+  /* List cards: a name (with a muted line under it) and a few number columns */
+  .list .card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4px 12px; margin-bottom: 8px; flex-wrap: wrap; }
+  .list h2 { font-size: 15px; font-weight: 600; margin: 0; }
+  .list .card-head p { margin: 0; color: var(--text-2); font-size: 12.5px; }
+  .list td:first-child { white-space: normal; }
+  .item-name { font-weight: 500; overflow-wrap: anywhere; }
+  .item-name .badge { margin-left: 6px; font-weight: 400; }
+  .item-meta { color: var(--muted); font-size: 12px; }
+  .item-name a { text-decoration: none; }
+  .item-name a:hover { text-decoration: underline; text-underline-offset: 2px; }
+  .list-empty { color: var(--text-2); padding: 12px 0 4px; margin: 0; }
+  .list-foot { margin: 10px 0 0; color: var(--text-2); font-size: 12.5px; }
+  .list h3 { font-size: 13px; font-weight: 600; margin: 16px 0 4px; }
+  .repo-link {
+    border: 0; background: none; padding: 0; cursor: pointer; font-size: 12px; color: var(--muted); white-space: nowrap;
+    text-decoration: underline; text-decoration-color: var(--axis); text-underline-offset: 2px;
+  }
+  .repo-link:hover { color: var(--text-1); text-decoration-color: currentColor; }
+  .charts > :only-child { grid-column: 1 / -1; }
+
+  .notes { margin-top: 28px; color: var(--text-2); font-size: 12.5px; max-width: 760px; }
+  .notes h3 { font-size: 13px; color: var(--text-1); margin: 0 0 6px; font-weight: 600; }
+  .notes ul { margin: 0; padding-left: 18px; }
+  .notes li { margin: 3px 0; }
+
+  .empty { text-align: center; padding: 48px 16px; color: var(--text-2); }
+  .empty h2 { color: var(--text-1); font-size: 17px; margin: 0 0 8px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; background: var(--wash); padding: 1px 5px; border-radius: 4px; }
+
+  @media (max-width: 900px) {
+    .charts { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 760px) {
+    .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .tile .value { font-size: 24px; }
+    .period-label { min-width: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+  <header>
+    <div>
+      <h1>GitHub traffic</h1>
+      <div class="meta" id="meta"></div>
+    </div>
+    <div class="seg small" id="theme" role="group" aria-label="Theme"></div>
+  </header>
+  <div id="banners"></div>
+  <div id="main"></div>
+</div>
+
+<!-- Written by collect.py. Missing on a fresh checkout until the first run. -->
+<script src="data/traffic.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  // ----------------------------------------------------------------------- //
+  // Helpers
+  // ----------------------------------------------------------------------- //
+  var DAY = 864e5;
+  var LOCALE = 'en-US';
+  var SVGNS = 'http://www.w3.org/2000/svg';
+
+  function parse(s) { return Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10)); }
+  function iso(ms) { return new Date(ms).toISOString().slice(0, 10); }
+  function addDays(s, n) { return iso(parse(s) + n * DAY); }
+  function daysBetween(a, b) { return Math.round((parse(b) - parse(a)) / DAY); }
+  function eachDay(a, b, fn) { for (var t = parse(a), e = parse(b); t <= e; t += DAY) fn(iso(t)); }
+  var TODAY = iso(Date.now());
+
+  function dtf(opts) { opts.timeZone = 'UTC'; return new Intl.DateTimeFormat(LOCALE, opts); }
+  var F = {
+    dayLong: dtf({ weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }),
+    weekday: dtf({ weekday: 'short' }),
+    dayNum: dtf({ day: 'numeric' }),
+    monthShort: dtf({ month: 'short' }),
+    monthYear: dtf({ month: 'long', year: 'numeric' }),
+    date: dtf({ month: 'short', day: 'numeric', year: 'numeric' }),
+    monthDay: dtf({ month: 'short', day: 'numeric' }),
+    dateTime: new Intl.DateTimeFormat(LOCALE, { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' })
+  };
+  function fmtRange(a, b, short) {
+    // short: leave out the year when both days are in the current year
+    var f = short && a.slice(0, 4) === TODAY.slice(0, 4) && b.slice(0, 4) === TODAY.slice(0, 4) ? F.monthDay : F.date;
+    if (a === b) return f.format(parse(a));
+    try { return f.formatRange(parse(a), parse(b)); }
+    catch (e) { return f.format(parse(a)) + ' – ' + f.format(parse(b)); }
+  }
+  var NF = new Intl.NumberFormat(LOCALE);
+  var NC = new Intl.NumberFormat(LOCALE, { notation: 'compact', maximumFractionDigits: 1 });
+  function fmtNum(n) { return n >= 10000 ? NC.format(n) : NF.format(n); }
+
+  function el(tag, attrs) {
+    var node = document.createElement(tag);
+    if (attrs) for (var k in attrs) {
+      var v = attrs[k];
+      if (v == null || v === false) continue;
+      if (k === 'class') node.className = v;
+      else if (k === 'text') node.textContent = v;
+      else if (k.slice(0, 2) === 'on') node.addEventListener(k.slice(2), v);
+      else node.setAttribute(k, v === true ? '' : v);
+    }
+    for (var i = 2; i < arguments.length; i++) append(node, arguments[i]);
+    return node;
+  }
+  function append(node, kid) {
+    if (kid == null || kid === false) return;
+    if (Array.isArray(kid)) { kid.forEach(function (k) { append(node, k); }); return; }
+    node.appendChild(kid instanceof Node ? kid : document.createTextNode(String(kid)));
+  }
+  function svg(tag, attrs) {
+    var node = document.createElementNS(SVGNS, tag);
+    for (var k in attrs) if (attrs[k] != null) node.setAttribute(k, attrs[k]);
+    return node;
+  }
+  function store(key, val) {
+    try {
+      if (val === undefined) return JSON.parse(localStorage.getItem(key) || 'null');
+      localStorage.setItem(key, JSON.stringify(val));
+    } catch (e) { return null; }
+  }
+
+  var ICON_WARN = '<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5 18.5 17h-17z" fill="#fab219"/><path d="M10 8v4.5M10 14.6v.1" stroke="#0b0b0b" stroke-width="1.8" stroke-linecap="round"/></svg>';
+  var ICON_INFO = '<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10 9v5M10 6.2v.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+
+  // ----------------------------------------------------------------------- //
+  // Theme: System (follows the OS), Light or Dark; saved in this browser.
+  // ----------------------------------------------------------------------- //
+  (function themeSwitch() {
+    var host = document.getElementById('theme');
+    var choice = store('ghtd.theme');
+    if (choice !== 'light' && choice !== 'dark') choice = 'system';
+    function paint() {
+      if (choice === 'system') document.documentElement.removeAttribute('data-theme');
+      else document.documentElement.setAttribute('data-theme', choice);
+      Array.prototype.forEach.call(host.children, function (b) {
+        b.setAttribute('aria-pressed', String(b.value === choice));
+      });
+    }
+    [['system', 'System'], ['light', 'Light'], ['dark', 'Dark']].forEach(function (o) {
+      host.appendChild(el('button', { type: 'button', value: o[0], onclick: function () {
+        choice = o[0];
+        store('ghtd.theme', choice === 'system' ? null : choice);
+        paint();
+      } }, o[1]));
+    });
+    paint();
+  })();
+
+  // ----------------------------------------------------------------------- //
+  // Data
+  // ----------------------------------------------------------------------- //
+  var RAW = window.TRAFFIC_DATA;
+  var main = document.getElementById('main');
+
+  if (!RAW || !RAW.repos || !Object.keys(RAW.repos).length) {
+    main.appendChild(el('div', { class: 'card empty' },
+      el('h2', { text: 'No traffic data yet' }),
+      el('p', null, 'Run ', el('code', { text: 'python3 collect.py' }), ' in this folder to fetch the last 14 days from GitHub,'),
+      el('p', null, 'then reload this page. See ', el('code', { text: 'README.md' }), ' for token setup and daily scheduling.')
+    ));
+    return;
+  }
+
+  var repos = Object.keys(RAW.repos).map(function (id) {
+    var r = RAW.repos[id];
+    var assets = Object.keys(r.assets || {}).map(function (aid) {
+      var a = r.assets[aid];
+      return { id: aid, name: a.name || aid, tag: a.tag || '', count: a.count || 0, days: a.days || {}, deleted: !!a.deleted };
+    });
+    var downloads = {};   // release downloads per day, all files of the repo
+    assets.forEach(function (a) {
+      Object.keys(a.days).forEach(function (d) { downloads[d] = (downloads[d] || 0) + a.days[d]; });
+    });
+    return {
+      id: id, name: r.name || r.full_name || id, full: r.full_name || '', url: r.html_url || '',
+      desc: r.description || '', priv: !!r.private, archived: !!r.archived, stars: r.stars || 0,
+      views: r.views || {}, clones: r.clones || {},
+      assets: assets, downloads: downloads, flashes: r.flashes || {}, bins: r.bin_clicks || {}, chips: r.flash_chips || {},
+      referrers: r.referrers || {}, paths: r.paths || {}, pageVisits: r.page_visits || {}, search: r.search || {}
+    };
+  }).sort(function (a, b) { return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }); });
+  var repoById = {};
+  repos.forEach(function (r) { repoById[r.id] = r; });
+
+  // A day is "tracked" when a collection run covered it (or data exists for it).
+  // Tracked days without a record are real zeros; untracked days are unknown.
+  var tracked = {};
+  (RAW.coverage || []).forEach(function (span) { eachDay(span[0], span[1], function (d) { tracked[d] = true; }); });
+  repos.forEach(function (r) {
+    Object.keys(r.views).forEach(function (d) { tracked[d] = true; });
+    Object.keys(r.clones).forEach(function (d) { tracked[d] = true; });
+  });
+  var trackedList = Object.keys(tracked).sort();
+  var FIRST = trackedList[0] || TODAY;
+  var LAST = trackedList[trackedList.length - 1] || TODAY;
+  // The last run collected its own (UTC) day only partially; every earlier tracked day is complete.
+  var RUN_DAY = RAW.updated_at ? new Date(RAW.updated_at).toISOString().slice(0, 10) : TODAY;
+  if (RUN_DAY > TODAY) RUN_DAY = TODAY;
+  var LAST_COMPLETE = addDays(RUN_DAY, -1);
+
+  // Firmware numbers (release downloads, browser flashes) have their own start: GitHub keeps
+  // no download history, so daily counts exist from the first collection that recorded them.
+  var FW_FIRST = RAW.firmware_since ? new Date(RAW.firmware_since).toISOString().slice(0, 10) : null;
+  var HAS_FW = !!FW_FIRST;
+  function fwTracked(d) { return HAS_FW && d >= FW_FIRST && d <= RUN_DAY; }
+
+  function spanDays(spans) {
+    var out = [];
+    (spans || []).forEach(function (span) { eachDay(span[0], span[1], function (d) { out.push(d); }); });
+    return out.sort();
+  }
+  // Referring sites and popular content: GitHub only gives a top-10 list per repo for the last
+  // 14 days, which the collector saves once a day. *_DAYS = the days with such a snapshot.
+  var REF_DAYS = spanDays(RAW.referrer_days), PATH_DAYS = spanDays(RAW.path_days);
+  var HAS_REF = REF_DAYS.length > 0, HAS_PATH = PATH_DAYS.length > 0;
+
+  // Where a website visit came from, by the referring host the page counter sent.
+  var OWN_SITE = RAW.owner ? RAW.owner.toLowerCase() + '.github.io' : '';
+  var SOURCES = [
+    [/(^|\.)(chatgpt|openai)\.com$/, 'ChatGPT', 'ai'], [/(^|\.)perplexity\.ai$/, 'Perplexity', 'ai'],
+    [/(^|\.)claude\.ai$/, 'Claude', 'ai'], [/^gemini\.google\.com$/, 'Gemini', 'ai'],
+    [/^copilot\.microsoft\.com$/, 'Copilot', 'ai'],
+    [/(^|\.)google\.[a-z.]+$/, 'Google', 'search'], [/(^|\.)bing\.com$/, 'Bing', 'search'],
+    [/(^|\.)duckduckgo\.com$/, 'DuckDuckGo', 'search'], [/(^|\.)yahoo\.[a-z.]+$/, 'Yahoo', 'search'],
+    [/(^|\.)ecosia\.org$/, 'Ecosia', 'search'], [/(^|\.)yandex\.[a-z.]+$/, 'Yandex', 'search'],
+    [/(^|\.)baidu\.com$/, 'Baidu', 'search'], [/^search\.brave\.com$/, 'Brave Search', 'search'],
+    [/(^|\.)startpage\.com$/, 'Startpage', 'search'], [/(^|\.)qwant\.com$/, 'Qwant', 'search'],
+    [/(^|\.)kagi\.com$/, 'Kagi', 'search'], [/^github\.com$/, 'github.com', 'github']
+  ];
+  var sourceCache = {};
+  function sourceOf(host) {
+    if (sourceCache[host]) return sourceCache[host];
+    var s = !host ? { label: 'Direct or unknown', kind: 'direct' }
+      : host === OWN_SITE ? { label: host + ' (your site)', kind: 'own' } : null;
+    for (var i = 0; !s && i < SOURCES.length; i++) if (SOURCES[i][0].test(host)) s = { label: SOURCES[i][1], kind: SOURCES[i][2] };
+    return (sourceCache[host] = s || { label: host.replace(/^www\./, ''), kind: 'other' });
+  }
+
+  // Website visits (page counter pings) count from the first visit that came in.
+  var WEB_FIRST = null;
+  repos.forEach(function (r) {
+    r.visitDays = {};   // day -> [visits, from search engines]
+    Object.keys(r.pageVisits).forEach(function (d) {
+      if (!WEB_FIRST || d < WEB_FIRST) WEB_FIRST = d;
+      var tot = 0, srch = 0, pages = r.pageVisits[d];
+      for (var p in pages) for (var h in pages[p]) {
+        tot += pages[p][h];
+        if (sourceOf(h).kind === 'search') srch += pages[p][h];
+      }
+      r.visitDays[d] = [tot, srch];
+    });
+  });
+  var HAS_WEB = !!WEB_FIRST;
+  function webTracked(d) { return HAS_WEB && d >= WEB_FIRST && d <= RUN_DAY; }
+
+  // Google Search Console: days read so far; numbers after GSC_COMPLETE may still change.
+  var GSC_LIST = spanDays(RAW.search_days), gscDays = {};
+  GSC_LIST.forEach(function (d) { gscDays[d] = true; });
+  var HAS_GSC = GSC_LIST.length > 0, GSC_FIRST = GSC_LIST[0] || null;
+  var GSC_COMPLETE = RAW.search_complete || addDays(RUN_DAY, -3);
+  function gscTracked(d) { return !!gscDays[d] && d <= RUN_DAY; }
+  repos.forEach(function (r) {
+    r.gsc = {};   // day -> [clicks, impressions], including searches Google does not list
+    for (var d in r.search) r.gsc[d] = r.search[d].t || [0, 0];
+  });
+
+  // Each family of numbers has its own tracked days, start, and last complete day.
+  var FAMS = {
+    tr: { keys: ['views', 'visitors', 'clones', 'cloners'], tracked: function (d) { return !!tracked[d]; },
+      done: LAST_COMPLETE, first: FIRST, what: 'Traffic numbers' },
+    fw: { keys: ['flashes', 'failed', 'relDl', 'pageDl', 'downloads'], tracked: fwTracked,
+      done: LAST_COMPLETE, first: FW_FIRST, what: 'Firmware numbers' },
+    web: { keys: ['visits', 'fromSearch'], tracked: webTracked, done: LAST_COMPLETE, first: WEB_FIRST, what: 'Page visits' },
+    gsc: { keys: ['clicks', 'impressions'], tracked: gscTracked, done: GSC_COMPLETE, first: GSC_FIRST, what: 'Google search numbers' }
+  };
+  var FAM_NAMES = Object.keys(FAMS);
+  // Earliest day any family has numbers for (search data can reach back 16 months).
+  var NAV_FIRST = GSC_FIRST && GSC_FIRST < FIRST ? GSC_FIRST : FIRST;
+
+  function dayTotals(list, day) {
+    var t = { views: 0, visitors: 0, clones: 0, cloners: 0, flashes: 0, failed: 0, relDl: 0, pageDl: 0,
+      visits: 0, fromSearch: 0, clicks: 0, impressions: 0 };
+    for (var i = 0; i < list.length; i++) {
+      var r = list[i], v = r.views[day], c = r.clones[day], f = r.flashes[day], w = r.visitDays[day], g = r.gsc[day];
+      if (v) { t.views += v[0]; t.visitors += v[1]; }
+      if (c) { t.clones += c[0]; t.cloners += c[1]; }
+      if (f) { t.flashes += f[0]; t.failed += f[1]; }
+      if (w) { t.visits += w[0]; t.fromSearch += w[1]; }
+      if (g) { t.clicks += g[0]; t.impressions += g[1]; }
+      t.relDl += r.downloads[day] || 0;
+      t.pageDl += r.bins[day] || 0;
+    }
+    t.downloads = t.relDl + t.pageDl;
+    return t;
+  }
+  // Sum over days that are tracked and not in the future. N[family] = days counted for it.
+  function sumDays(list, days) {
+    var t = { N: {} };
+    FAM_NAMES.forEach(function (f) { t.N[f] = 0; FAMS[f].keys.forEach(function (k) { t[k] = 0; }); });
+    days.forEach(function (d) {
+      if (d > TODAY) return;
+      var x = null;
+      FAM_NAMES.forEach(function (f) {
+        if (!FAMS[f].tracked(d)) return;
+        x = x || dayTotals(list, d);
+        FAMS[f].keys.forEach(function (k) { t[k] += x[k]; });
+        t.N[f]++;
+      });
+    });
+    return t;
+  }
+  function dayList(a, b) { var out = []; eachDay(a, b, function (d) { out.push(d); }); return out; }
+
+  // ----------------------------------------------------------------------- //
+  // Periods
+  // ----------------------------------------------------------------------- //
+  // Day view: offset 0 is the latest fully collected day; +1 is the day still being counted.
+  var DAY_MAX_OFFSET = daysBetween(LAST_COMPLETE, RUN_DAY);
+  var DAY_WINDOW = 14;   // the charts show this many days up to the selected day
+
+  function periodRange(period, offset) {
+    var t = parse(TODAY), d = new Date(t), y = d.getUTCFullYear(), m = d.getUTCMonth();
+    if (period === 'day') { var one = addDays(LAST_COMPLETE, offset); return { start: one, end: one }; }
+    if (period === 'week') {
+      var monday = t - ((d.getUTCDay() + 6) % 7) * DAY + offset * 7 * DAY;
+      return { start: iso(monday), end: iso(monday + 6 * DAY) };
+    }
+    if (period === 'month') return { start: iso(Date.UTC(y, m + offset, 1)), end: iso(Date.UTC(y, m + offset + 1, 0)) };
+    if (period === 'year') return { start: iso(Date.UTC(y + offset, 0, 1)), end: iso(Date.UTC(y + offset, 11, 31)) };
+    return { start: FIRST < TODAY ? FIRST : TODAY, end: TODAY };
+  }
+  function periodLabel(period, range) {
+    if (period === 'day') return F.dayLong.format(parse(range.start));
+    if (period === 'week') return fmtRange(range.start, range.end);
+    if (period === 'month') return F.monthYear.format(parse(range.start));
+    if (period === 'year') return range.start.slice(0, 4);
+    return 'All time';
+  }
+  var PERIOD_NOUN = { day: 'day', week: 'week', month: 'month', year: 'year' };
+  var BACK_LABEL = { day: 'Back to latest full day', week: 'Back to current week', month: 'Back to current month', year: 'Back to current year' };
+  function maxOffset(period) { return period === 'day' ? DAY_MAX_OFFSET : 0; }
+  // What the charts plot: the period itself, or for a single day the days leading up to it.
+  function chartRange(period, range) {
+    return period === 'day' ? { start: addDays(range.start, -(DAY_WINDOW - 1)), end: range.end } : range;
+  }
+
+  function buildBuckets(period, range, list) {
+    var span = daysBetween(range.start, range.end) + 1;
+    var monthly = period === 'year' || (period === 'all' && span > 92);
+    var buckets = [];
+    if (!monthly) {
+      eachDay(range.start, range.end, function (d) {
+        var t = parse(d);
+        buckets.push({
+          days: [d],
+          label: period === 'week' ? F.weekday.format(t) + ' ' + F.dayNum.format(t)
+            : period === 'month' ? F.dayNum.format(t)
+            : F.monthShort.format(t) + ' ' + F.dayNum.format(t),
+          tip: F.dayLong.format(t)
+        });
+      });
+    } else {
+      var s = new Date(parse(range.start)), cy = s.getUTCFullYear(), cm = s.getUTCMonth();
+      var endMs = parse(range.end);
+      while (Date.UTC(cy, cm, 1) <= endMs) {
+        var ms = Date.UTC(cy, cm, 1);
+        var a = iso(Math.max(ms, parse(range.start))), b = iso(Math.min(Date.UTC(cy, cm + 1, 0), endMs));
+        buckets.push({
+          days: dayList(a, b),
+          label: F.monthShort.format(ms) + (period === 'year' ? '' : ' ’' + String(cy).slice(2)),
+          tip: F.monthYear.format(ms)
+        });
+        cm++; if (cm > 11) { cm = 0; cy++; }
+      }
+    }
+    buckets.forEach(function (bk) {
+      var t = sumDays(list, bk.days), last = bk.days[bk.days.length - 1];
+      for (var k in t) bk[k] = t[k];
+      bk.future = bk.days[0] > TODAY;
+      // Per family: in progress = contains days after its last complete day (the day of the
+      // last run, which was collected mid-day, or Google's not yet final days); partial = some
+      // days not tracked.
+      FAM_NAMES.forEach(function (f) {
+        var n = t.N[f], has = n > 0, inProgress = has && last > FAMS[f].done;
+        var partial = has && !inProgress && n < bk.days.length;
+        bk[f] = { has: has, n: n, inProgress: inProgress, partial: partial, incomplete: inProgress || partial };
+      });
+    });
+    return { buckets: buckets, unit: monthly ? 'month' : 'day' };
+  }
+
+  // Like-for-like comparison over complete days only, per family: the period so far (up to
+  // the family's last complete day) against the same number of days at the start of the
+  // previous period. A family is compared only when every day on both sides was tracked for it.
+  function comparison(period, offset, range, list) {
+    if (period === 'all') return null;
+    var prev = periodRange(period, offset - 1), prevLen = daysBetween(prev.start, prev.end) + 1;
+    var out = {};
+    FAM_NAMES.forEach(function (f) {
+      var done = FAMS[f].done, curEnd = range.end < done ? range.end : done;
+      if (curEnd < range.start) { out[f] = range.start <= TODAY ? { inProgress: true } : null; return; }
+      var n = daysBetween(range.start, curEnd) + 1;
+      var prevEnd = addDays(prev.start, Math.min(n, prevLen) - 1);
+      var curDays = dayList(range.start, curEnd), prevDays = dayList(prev.start, prevEnd);
+      var whole = curEnd === range.end;
+      out[f] = {
+        missing: !curDays.concat(prevDays).every(FAMS[f].tracked),
+        cur: sumDays(list, curDays),
+        prev: sumDays(list, prevDays),
+        label: whole ? 'vs previous ' + PERIOD_NOUN[period] : 'vs ' + fmtRange(prev.start, prevEnd, true),
+        title: 'Compares ' + fmtRange(range.start, curEnd) + ' with ' + fmtRange(prev.start, prevEnd) +
+          (whole ? '.' : f === 'gsc' ? '. Days Google has not finalized yet are left out.'
+                         : '. The current, partly collected day is left out of the comparison.')
+      };
+    });
+    return out;
+  }
+
+  // ----------------------------------------------------------------------- //
+  // State
+  // ----------------------------------------------------------------------- //
+  var saved = store('ghtd.state') || {};
+  var state = {
+    period: ['day', 'week', 'month', 'year', 'all'].indexOf(saved.period) >= 0 ? saved.period : 'month',
+    offset: 0,
+    repo: saved.repo && repoById[saved.repo] ? saved.repo : 'all',
+    sort: saved.sort || { key: 'views', dir: -1 },
+    showInactive: false,
+    tables: {},
+    showAll: {}   // list cards expanded past their top rows
+  };
+  function setState(patch) {
+    for (var k in patch) state[k] = patch[k];
+    store('ghtd.state', { period: state.period, repo: state.repo, sort: state.sort });
+    render();
+  }
+  function canGoBack() {
+    if (state.period === 'all') return false;
+    return periodRange(state.period, state.offset - 1).end >= NAV_FIRST;
+  }
+
+  // ----------------------------------------------------------------------- //
+  // Header + banners
+  // ----------------------------------------------------------------------- //
+  (function header() {
+    var meta = document.getElementById('meta');
+    var bits = [];
+    if (RAW.owner) bits.push('@' + RAW.owner);
+    bits.push(repos.length + ' repositor' + (repos.length === 1 ? 'y' : 'ies'));
+    if (RAW.updated_at) bits.push('Updated ' + F.dateTime.format(new Date(RAW.updated_at)));
+    bits.push('Tracking since ' + F.date.format(parse(FIRST)));
+    bits.forEach(function (b) { meta.appendChild(el('span', { text: b })); });
+
+    var banners = document.getElementById('banners');
+    var ageDays = RAW.updated_at ? (Date.now() - new Date(RAW.updated_at).getTime()) / DAY : Infinity;
+    if (ageDays > 2) {
+      var b = el('div', { class: 'banner', role: 'status' });
+      b.innerHTML = ICON_WARN;
+      var lost = ageDays > 14;
+      b.appendChild(el('div', null,
+        el('strong', { text: lost ? 'Collection has stopped. ' : 'Collection is behind. ' }),
+        'Last run was ' + Math.floor(ageDays) + ' days ago. ',
+        lost ? 'GitHub only keeps 14 days, so some days are already lost. '
+             : 'GitHub keeps 14 days; run it within ' + Math.max(0, Math.floor(14 - ageDays)) + ' days to avoid a gap. ',
+        'Run ', el('code', { text: 'python3 collect.py' }), '.'));
+      banners.appendChild(b);
+    }
+    // Gaps between the first tracked day and today.
+    var gaps = [], gapStart = null;
+    eachDay(FIRST, LAST, function (d) {
+      if (!tracked[d] && gapStart === null) gapStart = d;
+      if (tracked[d] && gapStart !== null) { gaps.push([gapStart, addDays(d, -1)]); gapStart = null; }
+    });
+    if (gaps.length) {
+      var g = el('div', { class: 'banner', role: 'note' });
+      g.innerHTML = ICON_INFO;
+      g.appendChild(el('div', null,
+        el('strong', { text: 'Missing days: ' }),
+        gaps.map(function (x) { return fmtRange(x[0], x[1]); }).join(', '),
+        '. The collector did not run within 14 days of these, so they show as blank, not zero.'));
+      banners.appendChild(g);
+    }
+  })();
+
+  // ----------------------------------------------------------------------- //
+  // Layout (built once, filled by render)
+  // ----------------------------------------------------------------------- //
+  var filters = el('div', { class: 'filters', role: 'toolbar', 'aria-label': 'Filters' });
+  var kpis = el('div', { class: 'kpis' });
+  var charts = el('div', { class: 'charts' });
+  function listCard(id) { return el('section', { class: 'card list', 'aria-labelledby': id }); }
+  var refCard = listCard('refs-title'), pathCard = listCard('paths-title');
+  var sourcesCard = listCard('sources-title'), pagesCard = listCard('pages-title'), searchCard = listCard('search-title');
+  var filesCard = listCard('files-title');
+  // Rows of two cards; a row gets only the cards that have data (a single card spans the row).
+  function row(cards) {
+    var r = el('div', { class: 'charts' }, cards.filter(Boolean));
+    r.hidden = !r.childNodes.length;
+    return r;
+  }
+  var popRow = row([HAS_REF && refCard, HAS_PATH && pathCard]);
+  var webRow = row([]);         // website chart + sources, filled below
+  var siteRow = row([HAS_WEB && pagesCard, HAS_GSC && searchCard]);
+  var fwRow = row([]);          // firmware chart + release files, filled below
+  var repoCard = el('section', { class: 'card repos', 'aria-labelledby': 'repos-title' });
+  var notes = el('section', { class: 'notes' });
+  main.append(filters, kpis, charts, popRow, webRow, siteRow, fwRow, repoCard, notes);
+
+  // Sticky filter row gets a hairline once it is pinned.
+  var sentinel = el('div');
+  main.insertBefore(sentinel, filters);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) { filters.classList.toggle('stuck', !e[0].isIntersecting); }).observe(sentinel);
+  }
+
+  var CHARTS = [
+    { id: 'views', fam: 'tr', title: 'Views', what: 'Total and unique', total: 'views', unique: 'visitors', totalName: 'Views', uniqueName: 'Unique visitors' },
+    { id: 'clones', fam: 'tr', title: 'Clones', what: 'Total and unique', total: 'clones', unique: 'cloners', totalName: 'Clones', uniqueName: 'Unique cloners' }
+  ];
+  if (HAS_WEB) CHARTS.push({ id: 'website', fam: 'web', title: 'Website', what: 'Page visits', row: webRow,
+    total: 'visits', unique: 'fromSearch', totalName: 'Page visits', uniqueName: 'From search engines' });
+  if (HAS_FW) CHARTS.push({ id: 'firmware', fam: 'fw', title: 'Firmware', what: 'Browser flashes and downloads', row: fwRow,
+    total: 'flashes', unique: 'downloads', totalName: 'Browser flashes', uniqueName: 'Downloads' });
+  CHARTS.forEach(function (c) {
+    c.card = el('section', { class: 'card', 'aria-labelledby': 'chart-' + c.id });
+    c.sub = el('p');
+    c.btn = el('button', { class: 'toggle', type: 'button', 'aria-pressed': 'false', onclick: function () {
+      state.tables[c.id] = !state.tables[c.id]; render();
+    } }, 'Table');
+    c.legendSoft = el('span', null, el('i', { class: 'key-bar soft', 'aria-hidden': 'true' }), 'Incomplete');
+    c.legend = el('div', { class: 'legend' },
+      el('span', null, el('i', { class: 'key-bar', 'aria-hidden': 'true' }), c.totalName),
+      el('span', null, el('i', { class: 'key-line', 'aria-hidden': 'true' }), c.uniqueName),
+      c.legendSoft);
+    c.plot = el('div', { class: 'plot' });
+    c.table = el('div', { class: 'chart-table', hidden: true });
+    c.card.append(el('div', { class: 'chart-head' }, el('div', null, el('h2', { id: 'chart-' + c.id, text: c.title }), c.sub), c.btn),
+      c.legend, c.plot, c.table);
+    (c.row || charts).appendChild(c.card);
+  });
+  if (HAS_WEB) { webRow.appendChild(sourcesCard); webRow.hidden = false; }
+  if (HAS_FW) { fwRow.appendChild(filesCard); fwRow.hidden = false; }
+
+  // ----------------------------------------------------------------------- //
+  // Render
+  // ----------------------------------------------------------------------- //
+  var current = null;
+
+  function render() {
+    var list = state.repo === 'all' ? repos : [repoById[state.repo]];
+    var range = periodRange(state.period, state.offset);
+    var cRange = chartRange(state.period, range);
+    var built = buildBuckets(state.period, cRange, list);
+    if (state.period === 'day') built.buckets[built.buckets.length - 1].selected = true;
+    var effEnd = range.end < TODAY ? range.end : TODAY;
+    var days = effEnd >= range.start ? dayList(range.start, effEnd) : [];
+    // All time also reaches back to the oldest search data (the charts start with the traffic history).
+    var allDays = state.period === 'all' && NAV_FIRST < range.start ? dayList(NAV_FIRST, effEnd) : days;
+    var totals = sumDays(list, allDays);
+    var cmp = comparison(state.period, state.offset, range, list);
+    current = { list: list, range: range, built: built, totals: totals };
+
+    renderFilters(range);
+    renderKpis(totals, cmp);
+    CHARTS.forEach(function (c) {
+      var unitWord = built.unit === 'month' ? 'month' : 'day';
+      c.sub.textContent = c.what + ' per ' + unitWord + ' · ' +
+        (state.period === 'day' ? DAY_WINDOW + ' days up to ' + F.date.format(parse(range.start)) + ' · ' : '') +
+        (state.repo === 'all' ? 'all repositories' : repoById[state.repo].name);
+      var showTable = !!state.tables[c.id];
+      c.btn.setAttribute('aria-pressed', String(showTable));
+      c.btn.textContent = showTable ? 'Chart' : 'Table';
+      c.plot.hidden = showTable; c.legend.hidden = showTable; c.table.hidden = !showTable;
+      if (showTable) renderChartTable(c, built.buckets); else renderChart(c, built.buckets);
+    });
+    if (HAS_REF) renderSnapshot(REF_CFG, range, list);
+    if (HAS_PATH) renderSnapshot(PATH_CFG, range, list);
+    if (HAS_WEB) renderWebsite(range, days, list);
+    if (HAS_GSC) renderSearch(range, allDays, list);
+    renderRepoTable(range, days, built);
+    if (HAS_FW) renderFiles(range, days, list);
+    renderNotes();
+  }
+
+  function renderFilters(range) {
+    filters.textContent = '';
+    var seg = el('div', { class: 'seg', role: 'group', 'aria-label': 'Period' });
+    [['day', 'Day'], ['week', 'Week'], ['month', 'Month'], ['year', 'Year'], ['all', 'All time']].forEach(function (p) {
+      seg.appendChild(el('button', { type: 'button', 'aria-pressed': String(state.period === p[0]),
+        onclick: function () { setState({ period: p[0], offset: 0 }); } }, p[1]));
+    });
+    var nav = el('div', { class: 'nav' },
+      el('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Previous period', disabled: !canGoBack(),
+        onclick: function () { setState({ offset: state.offset - 1 }); } }, '‹'),
+      el('span', { class: 'period-label', 'aria-live': 'polite', text: periodLabel(state.period, range) }),
+      el('button', { class: 'icon-btn', type: 'button', 'aria-label': 'Next period',
+        disabled: state.period === 'all' || state.offset >= maxOffset(state.period),
+        onclick: function () { setState({ offset: state.offset + 1 }); } }, '›'));
+
+    var sel = el('select', { 'aria-label': 'Repository', onchange: function (e) { setState({ repo: e.target.value }); } });
+    sel.appendChild(el('option', { value: 'all', text: 'All repositories' }));
+    repos.forEach(function (r) { sel.appendChild(el('option', { value: r.id, text: r.name })); });
+    sel.value = state.repo;
+
+    filters.append(seg, nav, el('span', { class: 'select-wrap' }, sel));
+    if (state.offset !== 0) {
+      filters.appendChild(el('button', { class: 'link-btn', type: 'button',
+        onclick: function () { setState({ offset: 0 }); } }, BACK_LABEL[state.period]));
+    }
+  }
+
+  function renderKpis(totals, cmp) {
+    kpis.textContent = '';
+    var uniq = state.period === 'day' ? null : 'sum of daily uniques';
+    var tiles = [
+      { key: 'views', label: 'Views', mark: 'bar', fam: 'tr', sub: null },
+      { key: 'visitors', label: 'Unique visitors', mark: 'line', fam: 'tr', sub: uniq },
+      { key: 'clones', label: 'Clones', mark: 'bar', fam: 'tr', sub: null },
+      { key: 'cloners', label: 'Unique cloners', mark: 'line', fam: 'tr', sub: uniq }
+    ];
+    // Second row: the website, then firmware.
+    if (HAS_WEB) tiles.push({ key: 'visits', label: 'Website visits', mark: 'bar', fam: 'web',
+      sub: NF.format(totals.fromSearch) + ' from search engines',
+      title: 'Visits to your GitHub Pages site, counted once per page and browser session.' });
+    if (HAS_GSC) tiles.push({ key: 'clicks', label: 'Google search clicks', mark: null, fam: 'gsc',
+      sub: 'shown ' + NF.format(totals.impressions) + ' times in results',
+      title: 'Clicks from Google search results to your GitHub Pages site (Google Search Console).' });
+    if (HAS_FW) tiles.push(
+      { key: 'flashes', label: 'Browser flashes', mark: 'bar', fam: 'fw',
+        sub: totals.failed ? 'plus ' + NF.format(totals.failed) + ' failed' : 'via the web flasher' },
+      { key: 'downloads', label: 'Firmware downloads', mark: 'line', fam: 'fw',
+        sub: NF.format(totals.relDl) + ' releases · ' + NF.format(totals.pageDl) + ' page links',
+        title: 'Release files downloaded from GitHub, plus clicks on the .bin links of the flasher pages.' });
+    var noun = PERIOD_NOUN[state.period];
+    tiles.forEach(function (k) {
+      var v = totals[k.key], fc = cmp && cmp[k.fam], fam = FAMS[k.fam];
+      var delta = el('div', { class: 'delta' });
+      if (fc && fc.missing) {
+        delta.append('No comparison yet');
+        delta.title = k.fam !== 'tr' && fam.first
+          ? fam.what + ' are recorded since ' + F.date.format(parse(fam.first)) + '; the previous ' + noun + ' is not covered yet.'
+          : 'The previous ' + noun + ' was not fully tracked.';
+      } else if (fc && fc.prev) {
+        var c = fc.cur[k.key], p = fc.prev[k.key];
+        delta.title = fc.title + ' ' + fmtNum(c) + ' vs ' + fmtNum(p) + '.';
+        if (p === 0 && c === 0) delta.append('No change ', fc.label);
+        else if (p === 0) delta.append(el('span', { class: 'up', text: '▲ new' }), ' ', fc.label + ' (0)');
+        else {
+          var pct = (c - p) / p * 100;
+          var r = Math.abs(pct) < 10 ? Math.round(pct * 10) / 10 : Math.round(pct);
+          if (r === 0) delta.append('No change ', fc.label);
+          else delta.append(el('span', { class: r > 0 ? 'up' : 'down',
+            text: (r > 0 ? '▲ ' : '▼ ') + Math.abs(r) + '%' }), ' ' + fc.label);
+        }
+      } else if (fc && fc.inProgress) {
+        delta.append('Still counting');
+        delta.title = k.fam === 'gsc'
+          ? 'Google needs 2–3 days to finalize its numbers; no day of this ' + noun + ' is final yet.'
+          : state.period === 'day'
+          ? 'This day is not fully collected yet. It is compared with the day before once it is complete.'
+          : 'No day of this ' + noun + ' is fully collected yet, so there is nothing to compare.';
+      }
+      kpis.appendChild(el('div', { class: 'card tile', title: k.title || null },
+        el('div', { class: 'label' }, k.mark ? el('i', { class: 'key key-' + k.mark, 'aria-hidden': 'true' }) : null, k.label),
+        el('div', { class: 'value', text: totals.N[k.fam] ? fmtNum(v) : '—' }),
+        delta,
+        k.sub && totals.N[k.fam] ? el('div', { class: 'sub', text: k.sub }) : null));
+    });
+  }
+
+  // --- Chart -------------------------------------------------------------- //
+  function niceTicks(max) {
+    if (max < 4) { var top0 = Math.max(1, Math.ceil(max)); var t0 = []; for (var i = 0; i <= top0; i++) t0.push(i); return t0; }
+    var raw = max / 4, pow = Math.pow(10, Math.floor(Math.log10(raw))), step = pow;
+    [1, 2, 2.5, 5, 10].some(function (m) { var s = m * pow; if (s >= raw && Number.isInteger(s)) { step = s; return true; } return false; });
+    var top = Math.ceil(max / step) * step, ticks = [];
+    for (var v = 0; v <= top + 1e-9; v += step) ticks.push(v);
+    return ticks;
+  }
+  function barPath(x, y, w, h) {
+    var r = Math.min(4, w / 2, h);
+    return 'M' + x + ',' + (y + h) + 'V' + (y + r) + 'A' + r + ',' + r + ' 0 0 1 ' + (x + r) + ',' + y +
+      'H' + (x + w - r) + 'A' + r + ',' + r + ' 0 0 1 ' + (x + w) + ',' + (y + r) + 'V' + (y + h) + 'Z';
+  }
+
+  function renderChart(c, buckets) {
+    var host = c.plot;
+    host.textContent = '';
+    var W = Math.max(260, host.clientWidth || c.card.clientWidth - 32), H = 250;
+    var n = buckets.length;
+    var fl = function (b) { return b[c.fam]; };   // tracked / incomplete flags for this chart's family
+    var tot = buckets.map(function (b) { return fl(b).has ? b[c.total] : null; });
+    var uni = buckets.map(function (b) { return fl(b).has ? b[c.unique] : null; });
+    // Scale to both series: the line (downloads) can be higher than the bars (flashes).
+    var maxV = Math.max.apply(null, [0].concat(tot.concat(uni).filter(function (v) { return v != null; })));
+    var ticks = niceTicks(maxV), top = ticks[ticks.length - 1];
+    var compact = top >= 10000;
+    var tickText = ticks.map(function (t) { return compact ? NC.format(t) : NF.format(t); });
+    var ml = Math.max.apply(null, tickText.map(function (t) { return t.length; })) * 6.6 + 12;
+    var mr = 6, mt = 20, mb = 26;
+    var pw = W - ml - mr, ph = H - mt - mb, band = pw / n;
+    var bw = Math.max(1, Math.min(24, band * 0.62, band - 2));
+    function X(i) { return ml + band * (i + 0.5); }
+    function Y(v) { return mt + ph - (v / top) * ph; }
+    var selI = -1;
+    buckets.forEach(function (b, i) { if (b.selected) selI = i; });
+    function sum(arr) { return arr.reduce(function (a, v) { return a + (v || 0); }, 0); }
+
+    var root = svg('svg', { width: W, height: H, viewBox: '0 0 ' + W + ' ' + H, tabindex: 0, role: 'img',
+      'aria-label': c.title + ' chart: ' + sum(tot) + ' ' + c.totalName.toLowerCase() + ', ' +
+        sum(uni) + ' ' + c.uniqueName.toLowerCase() + '. Use arrow keys to read values, or switch to the table.' });
+
+    ticks.forEach(function (t, i) {
+      root.appendChild(svg('line', { x1: ml, x2: W - mr, y1: Y(t), y2: Y(t),
+        stroke: t === 0 ? 'var(--axis)' : 'var(--grid)', 'stroke-width': 1, 'shape-rendering': 'crispEdges' }));
+      var tx = svg('text', { x: ml - 8, y: Y(t) + 4, 'text-anchor': 'end', class: 'tick' });
+      tx.textContent = tickText[i];
+      root.appendChild(tx);
+    });
+
+    // Day view: the selected day keeps a tinted column (like a selected table row).
+    if (selI >= 0) root.appendChild(svg('rect', { x: X(selI) - (band - 2) / 2, y: mt - 4, height: ph + 4,
+      width: Math.max(1, band - 2), rx: 4, fill: 'var(--s1-wash)' }));
+
+    // Column wash behind the hovered bucket (drawn under the bars).
+    var colWash = svg('rect', { y: mt - 4, height: ph + 4, width: Math.max(1, band - 2), rx: 4,
+      fill: 'var(--wash)', visibility: 'hidden' });
+    root.appendChild(colWash);
+
+    var bars = svg('g', {});
+    tot.forEach(function (v, i) {
+      if (!v) return;
+      var hgt = Math.max(1, (v / top) * ph);
+      bars.appendChild(svg('path', { d: barPath(X(i) - bw / 2, mt + ph - hgt, bw, hgt),
+        fill: fl(buckets[i]).incomplete ? 'var(--s1-soft)' : 'var(--s1)' }));
+    });
+    root.appendChild(bars);
+    c.legendSoft.hidden = !buckets.some(function (b) { return fl(b).incomplete && b[c.total]; });
+
+    // Unique line, broken across untracked buckets.
+    var d = '', pen = false;
+    uni.forEach(function (v, i) {
+      if (v == null) { pen = false; return; }
+      d += (pen ? 'L' : 'M') + X(i).toFixed(1) + ',' + Y(v).toFixed(1); pen = true;
+    });
+    if (d) root.appendChild(svg('path', { d: d, fill: 'none', stroke: 'var(--s2)', 'stroke-width': 2,
+      'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+    var showDots = band >= 14;
+    uni.forEach(function (v, i) {
+      // Isolated points need a dot to be visible at all.
+      var isolated = v != null && (i === 0 || uni[i - 1] == null) && (i === n - 1 || uni[i + 1] == null);
+      if (v != null && (showDots || isolated)) root.appendChild(svg('circle', { cx: X(i), cy: Y(v), r: 4,
+        fill: 'var(--s2)', stroke: 'var(--surface)', 'stroke-width': 2 }));
+    });
+
+    // Label one bar only: the selected day if there is one, otherwise the peak.
+    var peakI = -1;
+    tot.forEach(function (v, i) { if (v && (peakI < 0 || v > tot[peakI])) peakI = i; });
+    if (selI >= 0) peakI = tot[selI] ? selI : -1;
+    if (peakI >= 0) {
+      var pl = svg('text', { x: Math.min(Math.max(X(peakI), ml + 14), W - mr - 14), y: Y(tot[peakI]) - 7,
+        'text-anchor': 'middle', class: 'peak' });
+      pl.textContent = fmtNum(tot[peakI]);
+      root.appendChild(pl);
+    }
+
+    // Nothing tracked in view: say why instead of showing an empty grid.
+    if (!buckets.some(function (b) { return fl(b).has; })) {
+      var why = svg('text', { x: ml + pw / 2, y: mt + ph / 2, 'text-anchor': 'middle', class: 'tick' });
+      var fam = FAMS[c.fam];
+      why.textContent = c.fam !== 'tr' && fam.first && buckets[buckets.length - 1].days.slice(-1)[0] < fam.first
+        ? fam.what + ' are recorded from ' + F.date.format(parse(fam.first)) + ' on'
+        : 'Not tracked in this period';
+      root.appendChild(why);
+    }
+
+    // X labels, thinned to fit.
+    var maxLabel = Math.max.apply(null, buckets.map(function (b) { return b.label.length; }));
+    var every = Math.max(1, Math.ceil((maxLabel * 6.4 + 10) / band));
+    var anchorI = selI >= 0 ? selI : 0;   // thin around the selected day so it always keeps its label
+    buckets.forEach(function (b, i) {
+      if ((i - anchorI) % every) return;
+      var t = svg('text', { x: X(i), y: H - 6, 'text-anchor': 'middle', class: i === selI ? 'tick sel' : 'tick' });
+      t.textContent = b.label;
+      root.appendChild(t);
+    });
+
+    // Hover layer: crosshair + one tooltip listing both series.
+    var cross = svg('line', { y1: mt - 4, y2: mt + ph, stroke: 'var(--muted)', 'stroke-width': 1,
+      'shape-rendering': 'crispEdges', visibility: 'hidden' });
+    var hoverDot = svg('circle', { r: 5, fill: 'var(--s2)', stroke: 'var(--surface)', 'stroke-width': 2, visibility: 'hidden' });
+    var hit = svg('rect', { x: ml, y: 0, width: pw, height: mt + ph, fill: 'transparent' });
+    root.append(cross, hoverDot, hit);
+    host.appendChild(root);
+
+    var tip = el('div', { class: 'tooltip', 'aria-hidden': 'true' });
+    host.appendChild(tip);
+    var active = -1;
+
+    function show(i) {
+      active = Math.max(0, Math.min(n - 1, i));
+      var b = buckets[active], x = X(active);
+      cross.setAttribute('x1', x); cross.setAttribute('x2', x); cross.setAttribute('visibility', 'visible');
+      colWash.setAttribute('x', x - (band - 2) / 2); colWash.setAttribute('visibility', 'visible');
+      if (uni[active] != null) {
+        hoverDot.setAttribute('cx', x); hoverDot.setAttribute('cy', Y(uni[active]));
+        hoverDot.setAttribute('visibility', 'visible');
+      } else hoverDot.setAttribute('visibility', 'hidden');
+
+      tip.textContent = '';
+      tip.appendChild(el('div', { class: 't-head', text: b.tip }));
+      var f = fl(b);
+      if (b.future) tip.appendChild(el('div', { class: 't-note', text: 'Not yet' }));
+      else if (!f.has) tip.appendChild(el('div', { class: 't-note', text: 'Not tracked' }));
+      else {
+        tip.appendChild(el('div', { class: 't-row' }, el('i', { class: 'key-line s1' }), el('b', { text: NF.format(b[c.total]) }), el('span', { text: c.totalName })));
+        tip.appendChild(el('div', { class: 't-row' }, el('i', { class: 'key-line' }), el('b', { text: NF.format(b[c.unique]) }), el('span', { text: c.uniqueName })));
+        if (c.fam === 'fw' && b.failed) tip.appendChild(el('div', { class: 't-note', text: NF.format(b.failed) + ' failed flash' + (b.failed === 1 ? '' : 'es') }));
+        if (f.inProgress) tip.appendChild(el('div', { class: 't-note', text: 'In progress, still counting' }));
+        else if (f.partial) tip.appendChild(el('div', { class: 't-note', text: 'Partly tracked (' + f.n + ' of ' + b.days.length + ' days)' }));
+      }
+      tip.classList.add('show');
+      var tw = tip.offsetWidth, left = x + 14;
+      if (left + tw > W) left = x - 14 - tw;
+      tip.style.transform = 'translate(' + Math.max(0, left) + 'px,' + (mt - 6) + 'px)';
+    }
+    function hide() {
+      active = -1;
+      cross.setAttribute('visibility', 'hidden'); hoverDot.setAttribute('visibility', 'hidden');
+      colWash.setAttribute('visibility', 'hidden');
+      tip.classList.remove('show');
+    }
+    function idxAt(evt) {
+      var rect = root.getBoundingClientRect();
+      return Math.floor((evt.clientX - rect.left - ml) / band);
+    }
+    hit.addEventListener('pointermove', function (e) { show(idxAt(e)); });
+    hit.addEventListener('pointerdown', function (e) { show(idxAt(e)); });
+    hit.addEventListener('pointerleave', hide);
+    root.addEventListener('focus', function () {
+      var last = 0; buckets.forEach(function (b, i) { if (!b.future) last = i; }); show(selI >= 0 ? selI : last);
+    });
+    root.addEventListener('blur', hide);
+    root.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { show(active - 1); e.preventDefault(); }
+      else if (e.key === 'ArrowRight') { show(active + 1); e.preventDefault(); }
+      else if (e.key === 'Home') { show(0); e.preventDefault(); }
+      else if (e.key === 'End') { show(n - 1); e.preventDefault(); }
+      else if (e.key === 'Escape') hide();
+    });
+  }
+
+  function renderChartTable(c, buckets) {
+    c.table.textContent = '';
+    var tb = el('tbody');
+    buckets.forEach(function (b) {
+      if (b.future) return;
+      var f = b[c.fam];
+      tb.appendChild(el('tr', { class: b.selected ? 'selected' : null },
+        el('td', { text: b.tip + (f.inProgress ? ' (in progress)' : f.partial ? ' (partly tracked)' : '') }),
+        el('td', { text: f.has ? NF.format(b[c.total]) : '—' }),
+        el('td', { text: f.has ? NF.format(b[c.unique]) : '—' })));
+    });
+    c.table.appendChild(el('table', null,
+      el('thead', null, el('tr', null, el('th', { text: 'Date' }), el('th', { text: c.totalName }), el('th', { text: c.uniqueName }))),
+      tb));
+  }
+
+  // --- Repo table ---------------------------------------------------------- //
+  var COLS = [
+    { key: 'name', label: 'Repository' },
+    { key: 'views', label: 'Views', meter: true },
+    { key: 'visitors', label: 'Visitors' },
+    { key: 'clones', label: 'Clones', meter: true },
+    { key: 'cloners', label: 'Cloners' },
+    { key: 'visits', label: 'Site visits', web: true },
+    { key: 'flashes', label: 'Flashes', fw: true },
+    { key: 'downloads', label: 'Downloads', fw: true },
+    { key: 'trend', label: 'Views trend', sortable: false },
+    { key: 'stars', label: 'Stars' }
+  ].filter(function (col) { return (HAS_FW || !col.fw) && (HAS_WEB || !col.web); });
+
+  function sparkline(values) {
+    var w = 84, h = 22, n = values.length;
+    var s = svg('svg', { width: w, height: h, viewBox: '0 0 ' + w + ' ' + h, 'aria-hidden': 'true' });
+    var max = Math.max.apply(null, [1].concat(values.filter(function (v) { return v != null; })));
+    var X = function (i) { return n === 1 ? w / 2 : 3 + (w - 6) * i / (n - 1); };
+    var Y = function (v) { return h - 3 - (h - 6) * v / max; };
+    s.appendChild(svg('line', { x1: 0, x2: w, y1: h - 2.5, y2: h - 2.5, stroke: 'var(--grid)', 'stroke-width': 1 }));
+    var d = '', pen = false, lastI = -1;
+    values.forEach(function (v, i) {
+      if (v == null) { pen = false; return; }
+      d += (pen ? 'L' : 'M') + X(i).toFixed(1) + ',' + Y(v).toFixed(1); pen = true; lastI = i;
+    });
+    if (d) s.appendChild(svg('path', { d: d, fill: 'none', stroke: 'var(--s1)', 'stroke-width': 1.5, 'stroke-linejoin': 'round', 'stroke-linecap': 'round' }));
+    if (lastI >= 0) s.appendChild(svg('circle', { cx: X(lastI), cy: Y(values[lastI]), r: 2.5, fill: 'var(--s1)' }));
+    return s;
+  }
+
+  function renderRepoTable(range, days, built) {
+    repoCard.textContent = '';
+    var rows = repos.map(function (r) {
+      var t = sumDays([r], days);
+      var spark = built.buckets.filter(function (b) { return !b.future; })
+        .map(function (b) { var x = sumDays([r], b.days); return x.N.tr ? x.views : null; });
+      return { r: r, name: r.name.toLowerCase(), views: t.views, visitors: t.visitors, clones: t.clones,
+        cloners: t.cloners, visits: t.visits, flashes: t.flashes, downloads: t.downloads, stars: r.stars, spark: spark,
+        active: t.views + t.clones + t.visits + t.flashes + t.downloads > 0 };
+    });
+    var key = state.sort.key, dir = state.sort.dir;
+    rows.sort(function (a, b) {
+      var x = a[key], y = b[key];
+      if (x !== y) return (x < y ? -1 : 1) * dir;
+      return (b.views - a.views) || (b.clones - a.clones) || a.name.localeCompare(b.name);
+    });
+    var activeRows = rows.filter(function (x) { return x.active || x.r.id === state.repo; });
+    var inactive = rows.length - activeRows.length;
+    var shown = state.showInactive ? rows : activeRows;
+    var maxViews = Math.max.apply(null, [1].concat(rows.map(function (x) { return x.views; })));
+    var maxClones = Math.max.apply(null, [1].concat(rows.map(function (x) { return x.clones; })));
+
+    repoCard.appendChild(el('div', { class: 'card-head' },
+      el('h2', { id: 'repos-title', text: 'Repositories' }),
+      el('p', { text: periodLabel(state.period, range) + ' · ' + activeRows.length + ' with traffic · select a repository to focus the charts' })));
+
+    var thead = el('tr');
+    COLS.forEach(function (col) {
+      if (col.sortable === false) { thead.appendChild(el('th', { text: col.label })); return; }
+      var on = key === col.key;
+      thead.appendChild(el('th', { 'aria-sort': on ? (dir > 0 ? 'ascending' : 'descending') : 'none' },
+        el('button', { type: 'button', onclick: function () {
+          setState({ sort: { key: col.key, dir: on ? -dir : (col.key === 'name' ? 1 : -1) } });
+        } }, col.label, el('span', { class: 'arrow', 'aria-hidden': 'true', text: on ? (dir > 0 ? '▲' : '▼') : '' }))));
+    });
+
+    var tbody = el('tbody');
+    shown.forEach(function (x) {
+      var r = x.r, sel = state.repo === r.id;
+      function numCell(v, max, meter) {
+        var txt = el('span', { class: v ? null : 'zero', text: NF.format(v) });
+        if (!meter) return el('td', null, txt);
+        return el('td', null, el('span', { class: 'num-bar' }, txt,
+          el('span', { class: 'meter', 'aria-hidden': 'true' }, el('i', { style: 'width:' + (v / max * 100).toFixed(1) + '%' }))));
+      }
+      tbody.appendChild(el('tr', { class: sel ? 'selected' : null },
+        el('td', null, el('span', { class: 'repo-cell' },
+          el('button', { class: 'repo-btn', type: 'button', title: r.desc || r.full, 'aria-pressed': String(sel),
+            onclick: function () { setState({ repo: sel ? 'all' : r.id }); } }, r.name),
+          r.priv ? el('span', { class: 'badge', text: 'Private' }) : null,
+          r.archived ? el('span', { class: 'badge', text: 'Archived' }) : null,
+          r.url ? el('a', { class: 'ext', href: r.url, target: '_blank', rel: 'noopener', 'aria-label': 'Open ' + r.name + ' on GitHub', text: '↗' }) : null)),
+        numCell(x.views, maxViews, true),
+        numCell(x.visitors),
+        numCell(x.clones, maxClones, true),
+        numCell(x.cloners),
+        HAS_WEB ? numCell(x.visits) : null,
+        HAS_FW ? numCell(x.flashes) : null,
+        HAS_FW ? numCell(x.downloads) : null,
+        el('td', { title: 'Views per ' + built.unit }, sparkline(x.spark)),
+        el('td', null, el('span', { class: x.stars ? null : 'zero', text: NF.format(x.stars) }))));
+    });
+    if (!shown.length) {
+      tbody.appendChild(el('tr', null, el('td', { colspan: COLS.length, class: 'zero', text: 'No traffic in this period.' })));
+    }
+    repoCard.appendChild(el('div', { class: 'table-scroll' }, el('table', null, el('thead', null, thead), tbody)));
+    if (inactive) {
+      repoCard.appendChild(el('div', { class: 'more' }, el('button', { class: 'link-btn', type: 'button',
+        onclick: function () { setState({ showInactive: !state.showInactive }); } },
+        state.showInactive ? 'Hide repositories without traffic' : 'Show ' + inactive + ' repositor' + (inactive === 1 ? 'y' : 'ies') + ' without traffic')));
+    }
+  }
+
+  // --- Small helpers for the list cards ------------------------------------ //
+  function values(o) { return Object.keys(o).map(function (k) { return o[k]; }); }
+  function cardHead(card, id, title, sub) {
+    card.textContent = '';
+    card.appendChild(el('div', { class: 'card-head' }, el('h2', { id: id, text: title }), sub ? el('p', { text: sub }) : null));
+  }
+  function listTable(heads, rows) {
+    return el('div', { class: 'table-scroll' }, el('table', null,
+      el('thead', null, el('tr', null, heads.map(function (h) { return el('th', { text: h }); }))),
+      el('tbody', null, rows)));
+  }
+  function numTd(v, text) { return el('td', null, el('span', { class: v ? null : 'zero', text: text != null ? text : NF.format(v) })); }
+  function meterTd(v, max) {
+    return el('td', null, el('span', { class: 'num-bar' }, el('span', { class: v ? null : 'zero', text: NF.format(v) }),
+      el('span', { class: 'meter', 'aria-hidden': 'true' }, el('i', { style: 'width:' + (max ? v / max * 100 : 0).toFixed(1) + '%' }))));
+  }
+  function repoLinks(items, tip) {
+    return items.map(function (p, i) {
+      return [i ? ', ' : null, el('button', { class: 'repo-link', type: 'button', title: tip(p),
+        onclick: function () { setState({ repo: p.r.id }); } }, p.r.name)];
+    });
+  }
+  function moreButton(key, total, limit, noun) {
+    if (total <= limit) return null;
+    return el('div', { class: 'more' }, el('button', { class: 'link-btn', type: 'button',
+      onclick: function () { state.showAll[key] = !state.showAll[key]; render(); } },
+      state.showAll[key] ? 'Show top ' + limit : 'Show all ' + total + ' ' + noun));
+  }
+  function top(key, rows, limit) { return rows.slice(0, state.showAll[key] ? rows.length : limit); }
+
+  // --- Referring sites / popular content (14-day lists) -------------------- //
+  // GitHub has no daily numbers for these, only a 14-day total. A period shows the snapshot of
+  // its last saved day (the 14 days up to that day).
+  var REF_CFG = { card: refCard, id: 'refs-title', title: 'Referring sites', days: REF_DAYS, field: 'referrers',
+    noun: 'sites', recorded: 'Referring sites are', head: 'Site', empty: 'No visits came from other sites in these 14 days',
+    row: function (x) { return { key: x[0], views: x[1], uniques: x[2] }; }, name: siteName };
+  var PATH_CFG = { card: pathCard, id: 'paths-title', title: 'Popular content', days: PATH_DAYS, field: 'paths',
+    noun: 'pages', recorded: 'Popular content is', head: 'Page on github.com', empty: 'No page views in these 14 days',
+    row: function (x) { return { key: x[0], views: x[2], uniques: x[3], title: x[1] }; }, name: pathName };
+
+  function snapshotDay(days, range) {
+    var lo = state.period === 'all' ? '' : range.start, hi = range.end < RUN_DAY ? range.end : RUN_DAY;
+    for (var i = days.length - 1; i >= 0; i--) {
+      if (days[i] <= hi) return days[i] >= lo ? days[i] : null;
+    }
+    return null;
+  }
+
+  function renderSnapshot(cfg, range, list) {
+    var card = cfg.card, multi = list.length > 1, snap = snapshotDay(cfg.days, range);
+    if (!snap) {
+      cardHead(card, cfg.id, cfg.title, periodLabel(state.period, range));
+      card.appendChild(el('p', { class: 'list-empty', text: range.end < cfg.days[0]
+        ? cfg.recorded + ' recorded from ' + F.date.format(parse(cfg.days[0])) + ' on.'
+        : 'The collector did not run in this period, so nothing was saved.' }));
+      return;
+    }
+    cardHead(card, cfg.id, cfg.title, fmtRange(addDays(snap, -13), snap, true) + ' (14 days) · top 10' + (multi ? ' per repository' : ''));
+    var by = {};
+    list.forEach(function (r) {
+      (r[cfg.field][snap] || []).forEach(function (raw) {
+        var x = cfg.row(raw);
+        var o = by[x.key] || (by[x.key] = { key: x.key, title: x.title, views: 0, uniques: 0, repos: [] });
+        o.views += x.views; o.uniques += x.uniques; o.repos.push({ r: r, views: x.views });
+      });
+    });
+    var rows = values(by).sort(function (a, b) {
+      return (b.views - a.views) || (b.uniques - a.uniques) || a.key.localeCompare(b.key);
+    });
+    if (!rows.length) {
+      card.appendChild(el('p', { class: 'list-empty', text: cfg.empty + (multi ? '.' : ' for ' + list[0].name + '.') }));
+    } else {
+      card.appendChild(listTable([cfg.head, 'Views', 'Unique visitors'], top(cfg.field, rows, 8).map(function (x) {
+        x.repos.sort(function (a, b) { return (b.views - a.views) || a.r.name.localeCompare(b.r.name); });
+        return el('tr', null, el('td', null, cfg.name(x, multi)), meterTd(x.views, rows[0].views), numTd(x.uniques));
+      })));
+      append(card, moreButton(cfg.field, rows.length, 8, cfg.noun));
+    }
+    if (cfg.field !== 'referrers') return;
+    // Sites from earlier snapshots in this period that are not in the list above.
+    var lo = state.period === 'all' ? '' : range.start, seen = {};
+    REF_DAYS.forEach(function (d) {
+      if (d < lo || d >= snap) return;
+      list.forEach(function (r) {
+        (r.referrers[d] || []).forEach(function (x) { if (!by[x[0]]) seen[x[0]] = Math.max(seen[x[0]] || 0, x[1]); });
+      });
+    });
+    var earlier = Object.keys(seen).sort(function (a, b) { return (seen[b] - seen[a]) || a.localeCompare(b); });
+    if (earlier.length) {
+      card.appendChild(el('p', { class: 'list-foot' },
+        (state.period === 'all' ? 'Also seen earlier: ' : 'Also seen earlier this ' + PERIOD_NOUN[state.period] + ': ') +
+        earlier.slice(0, 15).join(' · ') + (earlier.length > 15 ? ' and ' + (earlier.length - 15) + ' more' : '')));
+    }
+  }
+
+  function siteName(x, multi) {
+    return [el('div', { class: 'item-name', text: x.key }),
+      multi ? el('div', { class: 'item-meta' }, 'to ', repoLinks(x.repos, function (p) {
+        return NF.format(p.views) + ' views from ' + x.key + '. Click to show only ' + p.r.name + '.';
+      })) : null];
+  }
+
+  // Repository pages only people with write access can open (Insights → Traffic, Settings).
+  var ONLY_YOU = /^\/(graphs\/traffic|settings)(\/|$)/;
+  function pathName(x, multi) {
+    var r = x.repos[0].r, base = '/' + r.full, rest = null, label = x.key;
+    if (r.full && x.key.toLowerCase().indexOf(base.toLowerCase()) === 0) {
+      rest = x.key.slice(base.length);
+      if (!rest || rest === '/') { rest = '/'; label = 'Repository page (README)'; }
+      else if (rest.charAt(0) === '/') label = rest;
+      else rest = null;   // another repository's page (e.g. an old name that redirects here)
+    }
+    var you = rest && ONLY_YOU.test(rest);
+    return [el('div', { class: 'item-name' },
+        el('a', { href: 'https://github.com' + x.key, target: '_blank', rel: 'noopener', title: x.title || x.key, text: label }),
+        you ? el('span', { class: 'badge', text: 'you', title: 'Only people with write access can open this page, so these views are your own.' }) : null),
+      multi ? el('div', { class: 'item-meta' }, repoLinks(x.repos, function (p) { return 'Show only ' + p.r.name; })) : null];
+  }
+
+  // --- Website (GitHub Pages): where visitors came from, which pages -------- //
+  var SOURCE_KIND = { search: 'Search engine', ai: 'AI assistant', github: 'A link on GitHub',
+    own: 'Another page of your site', direct: 'Typed in, a bookmark, or no source sent', other: 'A link on another website' };
+
+  function renderWebsite(range, days, list) {
+    var multi = list.length > 1, wdays = days.filter(webTracked), pages = {}, sources = {}, total = 0;
+    list.forEach(function (r) {
+      wdays.forEach(function (d) {
+        var day = r.pageVisits[d];
+        if (!day) return;
+        for (var p in day) for (var h in day[p]) {
+          var n = day[p][h], s = sourceOf(h);
+          var pg = pages[r.id + ' ' + p] || (pages[r.id + ' ' + p] = { path: p, r: r, visits: 0, search: 0 });
+          pg.visits += n;
+          if (s.kind === 'search') pg.search += n;
+          var so = sources[s.label] || (sources[s.label] = { label: s.label, kind: s.kind, visits: 0 });
+          so.visits += n;
+          total += n;
+        }
+      });
+    });
+    var sub = periodLabel(state.period, range) + (OWN_SITE ? ' · ' + OWN_SITE : '');
+    cardHead(sourcesCard, 'sources-title', 'Where visitors came from', sub);
+    cardHead(pagesCard, 'pages-title', 'Website pages', sub);
+    var why = !wdays.length
+      ? (range.end < WEB_FIRST ? 'Page visits are recorded from ' + F.date.format(parse(WEB_FIRST)) + ' on.' : 'Page visits were not recorded in this period.')
+      : !total ? 'No website visits in this period' + (multi ? '.' : ' for ' + list[0].name + '.') : null;
+    if (why) {
+      sourcesCard.appendChild(el('p', { class: 'list-empty', text: why }));
+      pagesCard.appendChild(el('p', { class: 'list-empty', text: why }));
+      return;
+    }
+    var srcRows = values(sources).sort(function (a, b) { return (b.visits - a.visits) || a.label.localeCompare(b.label); });
+    sourcesCard.appendChild(listTable(['Source', 'Visits', 'Share'], top('sources', srcRows, 8).map(function (s) {
+      return el('tr', null,
+        el('td', null, el('div', { class: 'item-name', text: s.label }), el('div', { class: 'item-meta', text: SOURCE_KIND[s.kind] })),
+        meterTd(s.visits, srcRows[0].visits), numTd(s.visits, Math.round(s.visits / total * 100) + '%'));
+    })));
+    append(sourcesCard, moreButton('sources', srcRows.length, 8, 'sources'));
+
+    var pageRows = values(pages).sort(function (a, b) { return (b.visits - a.visits) || a.path.localeCompare(b.path); });
+    pagesCard.appendChild(listTable(['Page', 'Visits', 'From search'], top('pages', pageRows, 8).map(function (pg) {
+      return el('tr', null,
+        el('td', null,
+          el('div', { class: 'item-name' }, OWN_SITE
+            ? el('a', { href: 'https://' + OWN_SITE + pg.path, target: '_blank', rel: 'noopener', text: pg.path }) : pg.path),
+          multi ? el('div', { class: 'item-meta' }, repoLinks([{ r: pg.r }], function () { return 'Show only ' + pg.r.name; })) : null),
+        meterTd(pg.visits, pageRows[0].visits), numTd(pg.search));
+    })));
+    append(pagesCard, moreButton('pages', pageRows.length, 8, 'pages'));
+  }
+
+  // --- Search terms (Google Search Console) -------------------------------- //
+  function renderSearch(range, days, list) {
+    var multi = list.length > 1, gdays = days.filter(gscTracked), terms = {}, tot = [0, 0], listed = [0, 0];
+    list.forEach(function (r) {
+      gdays.forEach(function (d) {
+        var s = r.search[d];
+        if (!s) return;
+        tot[0] += s.t[0]; tot[1] += s.t[1];
+        (s.q || []).forEach(function (q) {
+          var o = terms[q[0]] || (terms[q[0]] = { term: q[0], clicks: 0, impr: 0, pos: 0, pages: {} });
+          o.clicks += q[2]; o.impr += q[3]; o.pos += q[4] * q[3]; o.pages[q[1]] = true;
+          listed[0] += q[2]; listed[1] += q[3];
+        });
+      });
+    });
+    var lastDay = gdays[gdays.length - 1];
+    cardHead(searchCard, 'search-title', 'Search terms', periodLabel(state.period, range) + ' · Google' +
+      (lastDay && lastDay > GSC_COMPLETE ? ' · days after ' + F.monthDay.format(parse(GSC_COMPLETE)) + ' are not final yet' : ''));
+    if (!gdays.length) {
+      searchCard.appendChild(el('p', { class: 'list-empty', text: range.end < GSC_FIRST
+        ? 'Google search data starts on ' + F.date.format(parse(GSC_FIRST)) + '.' : 'No Google search data for this period.' }));
+      return;
+    }
+    var rows = values(terms).sort(function (a, b) { return (b.clicks - a.clicks) || (b.impr - a.impr) || a.term.localeCompare(b.term); });
+    if (!rows.length) {
+      searchCard.appendChild(el('p', { class: 'list-empty', text: tot[1]
+        ? 'Google showed these pages in search results, but only for searches too rare for it to list.'
+        : 'Google did not show ' + (multi ? 'these pages' : 'the pages of ' + list[0].name) + ' in any search results in this period.' }));
+    } else {
+      searchCard.appendChild(listTable(['Search term', 'Clicks', 'Shown', 'Avg. position'], top('search', rows, 10).map(function (x) {
+        return el('tr', null,
+          el('td', null, el('div', { class: 'item-name', text: x.term }), el('div', { class: 'item-meta', text: Object.keys(x.pages).sort().join(', ') })),
+          numTd(x.clicks), numTd(x.impr),
+          el('td', { title: 'Average position in Google results (1 = top)', text: x.impr ? (x.pos / x.impr).toFixed(1) : '—' }));
+      })));
+      append(searchCard, moreButton('search', rows.length, 10, 'search terms'));
+    }
+    var hidden = [Math.max(0, tot[0] - listed[0]), Math.max(0, tot[1] - listed[1])];
+    var foot = 'In total ' + NF.format(tot[0]) + ' click' + (tot[0] === 1 ? '' : 's') + ', shown ' + NF.format(tot[1]) + ' times.';
+    if (hidden[1]) foot += ' Of these, searches too rare for Google to list: ' + NF.format(hidden[0]) + ' clicks, shown ' + NF.format(hidden[1]) + ' times.';
+    searchCard.appendChild(el('p', { class: 'list-foot', text: foot + ' Other search engines are not included.' }));
+  }
+
+  // --- Release files ------------------------------------------------------- //
+  function renderFiles(range, days, list) {
+    filesCard.textContent = '';
+    var fwDays = days.filter(fwTracked);
+    var rows = [];
+    list.forEach(function (r) {
+      r.assets.forEach(function (a) {
+        var n = 0;
+        fwDays.forEach(function (d) { n += a.days[d] || 0; });
+        rows.push({ a: a, r: r, n: n });
+      });
+    });
+    rows.sort(function (x, y) { return (y.n - x.n) || (y.a.count - x.a.count) || x.a.name.localeCompare(y.a.name); });
+    filesCard.appendChild(el('div', { class: 'card-head' },
+      el('h2', { id: 'files-title', text: 'Release files' }),
+      el('p', { text: periodLabel(state.period, range) + ' · all time as counted by GitHub' })));
+
+    var tbody = el('tbody'), LIMIT = 6;
+    rows.slice(0, state.allFiles ? rows.length : LIMIT).forEach(function (x) {
+      tbody.appendChild(el('tr', null,
+        el('td', null,
+          el('div', { class: 'item-name', title: x.a.name, text: x.a.name }),
+          el('div', { class: 'item-meta', text: x.r.name + (x.a.tag ? ' · ' + x.a.tag : '') + (x.a.deleted ? ' · removed' : '') })),
+        el('td', null, el('span', { class: x.n ? null : 'zero', text: NF.format(x.n) })),
+        el('td', null, el('span', { class: x.a.count ? null : 'zero', text: NF.format(x.a.count) }))));
+    });
+    if (!rows.length) {
+      tbody.appendChild(el('tr', null, el('td', { colspan: 3, class: 'zero', text: 'No release files' + (state.repo === 'all' ? '.' : ' in this repository.') })));
+    }
+    filesCard.appendChild(el('div', { class: 'table-scroll' }, el('table', null,
+      el('thead', null, el('tr', null, el('th', { text: 'File' }), el('th', { text: 'Downloads' }), el('th', { text: 'All time' }))),
+      tbody)));
+    if (rows.length > LIMIT) {
+      filesCard.appendChild(el('div', { class: 'more' }, el('button', { class: 'link-btn', type: 'button',
+        onclick: function () { setState({ allFiles: !state.allFiles }); } },
+        state.allFiles ? 'Show top ' + LIMIT : 'Show all ' + rows.length + ' files')));
+    }
+
+    // Which chips the browser flashes went to (all time).
+    var chips = {};
+    list.forEach(function (r) { for (var k in r.chips) chips[k] = (chips[k] || 0) + r.chips[k]; });
+    var names = Object.keys(chips).sort(function (a, b) { return chips[b] - chips[a]; });
+    if (names.length) {
+      filesCard.appendChild(el('p', { class: 'list-foot' }, 'Browser flashes by chip, all time: ',
+        names.map(function (k) { return k + ' ' + NF.format(chips[k]); }).join(' · ')));
+    }
+  }
+
+  function renderNotes() {
+    if (notes.childNodes.length) return;
+    notes.appendChild(el('h3', { text: 'How to read this' }));
+    notes.appendChild(el('ul', null,
+      el('li', { text: 'Views and clones are GitHub totals per day. Unique visitors and cloners are counted per day by GitHub, so a person who visits on three days counts three times in a week or month total.' }),
+      el('li', { text: 'Days are UTC days, matching GitHub. Weeks run Monday to Sunday.' }),
+      el('li', { text: 'Day opens on the latest fully collected day and compares it with the day before. The charts show the ' + DAY_WINDOW + ' days up to the selected day; › goes on to the day still being counted.' }),
+      el('li', { text: 'GitHub keeps only the last 14 days. Everything older comes from this dashboard\'s own history, so blank stretches before tracking started (or during a collection gap) are unknown, not zero.' }),
+      el('li', { text: 'Comparisons use the same number of days at the start of the previous period, and only appear once both periods are fully tracked.' }),
+      HAS_REF ? el('li', { text: 'Referring sites are the websites whose links brought visitors to a repository (github.com means links inside GitHub, such as your profile or search). GitHub only reports the top 10 per repository as one total for the last 14 days, with no daily numbers. The dashboard saves that list once a day from ' +
+        F.date.format(parse(REF_DAYS[0])) + ', so each period shows the 14 days up to its last saved day, not a total for the whole period. With all repositories selected, unique visitors are added up across repositories.' }) : null,
+      HAS_PATH ? el('li', { text: 'Popular content is GitHub\'s top 10 pages of each repository on github.com (README, releases, files), saved the same way. Pages marked "you", such as Insights → Traffic, can only be opened by people with write access to the repository, so those views are your own. GitHub includes them in the Views numbers too.' }) : null,
+      HAS_WEB ? el('li', { text: 'Website visits are counted by a small script on your GitHub Pages site: one visit per page and browser session, sent with only the name of the site the visitor came from (no cookies, no IP address). Visitors who block scripts or use some ad blockers are not counted. "From search engines" means they came from Google, Bing, DuckDuckGo or a similar search engine.' }) : null,
+      HAS_GSC ? el('li', { text: 'Search terms come from Google Search Console for your GitHub Pages site: how often a page was shown in Google results, how often people clicked, and its average position (1 = top). Google needs 2–3 days to finalize a day, and leaves out searches made by very few people (counted in the totals, but not listed). Other search engines are not included.' }) : null,
+      HAS_FW ? el('li', { text: 'Firmware downloads are release files downloaded from GitHub plus clicks on the .bin links of the flasher pages. GitHub only reports all-time totals per file, so daily numbers start on ' +
+        F.date.format(parse(FW_FIRST)) + '; downloads between two collection runs are spread over the hours in between. Files downloaded straight from a repository on github.com (such as the .bin links in a README) are not counted, because GitHub does not report them.' }) : null,
+      HAS_FW ? el('li', { text: 'Browser flashes are reported by the flasher pages when the web flasher finishes writing the firmware (failed attempts are counted separately). The reports are anonymous; ad blockers can hide some.' }) : null));
+  }
+
+  render();
+
+  // Re-draw charts when their width changes.
+  if ('ResizeObserver' in window) {
+    var lastW = 0, raf = 0;
+    new ResizeObserver(function (entries) {
+      var w = Math.round(entries[0].contentRect.width);
+      if (w === lastW) return; lastW = w;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(function () {
+        CHARTS.forEach(function (c) { if (!state.tables[c.id]) renderChart(c, current.built.buckets); });
+      });
+    }).observe(charts);
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+[Unit]
+Description=Collect GitHub traffic (views, clones) for the dashboard
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=github-traffic
+Group=github-traffic
+# The token / key files stay root-only; systemd hands a copy to this run only.
+# gsc-key (Google Search Console) is optional: an empty file means it is not set up.
+LoadCredential=github-token:/etc/github-traffic/token
+LoadCredential=gsc-key:/etc/github-traffic/gsc-key.json
+ExecStart=/usr/bin/python3 /opt/github-traffic/collect.py --data-dir /srv/github-traffic/data --ping-log /var/log/caddy/github-traffic-count.log
+UMask=0022
+
+# Sandbox: it may only write its data folder.
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/srv/github-traffic/data
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+RestrictAddressFamilies=AF_INET AF_INET6
